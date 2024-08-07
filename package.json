@@ -6,7 +6,7 @@
     "npm": "^9 || ^10"
   },
   "scripts": {
-    "start": "ts-node ./scripts/start/start.ts",
+    "start": "ts-node ./scripts/start/start.ts webpack serve --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production",
     "lint:types": "tsc",
     "lint": "eslint .",
